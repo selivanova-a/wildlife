@@ -93,15 +93,40 @@
 }
 
 .article {
-  &article__title {
+  margin: 73px 35px;
+  font-family: 'Open Sans', sans-serif;
+  &__title {
+    margin-bottom:50px;
+    color: $button-color;
+    font-size:48px;
+    letter-spacing: 3px;
 
   }
-  &article__text {
-    max-width: 280px;
-    height: 400px;
+  &__text {
+    margin-bottom:48px;
+    max-width: 270px;
+    font-size:18px;
+    color: $inner-font-color;
+    line-height:27px;
   }
 
   button {
     all: unset;
+    padding:16px 42px;
+    background: $button-color;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 23px;
+    color: $inner-font-color;
+  }
+
+  button:hover {
+    background-color: $button-hover-color;
+    transition-duration: 0.5s;
+  }
+
+  button:active {
+    background-color: $button-pressed-color;
+    transition-duration: 0.5s;
   }
 }

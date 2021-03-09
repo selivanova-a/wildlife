@@ -81,12 +81,39 @@
   text-decoration: none;
 }
 
-.articlearticle__text {
-  max-width: 280px;
-  height: 400px;
+.article {
+  margin: 73px 35px;
+  font-family: "Open Sans", sans-serif;
+}
+.article__title {
+  margin-bottom: 50px;
+  color: #CD6326;
+  font-size: 48px;
+  letter-spacing: 3px;
+}
+.article__text {
+  margin-bottom: 48px;
+  max-width: 270px;
+  font-size: 18px;
+  color: #F7F7F7;
+  line-height: 27px;
 }
 .article button {
   all: unset;
+  padding: 16px 42px;
+  background: #CD6326;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 23px;
+  color: #F7F7F7;
+}
+.article button:hover {
+  background-color: #E6902B;
+  transition-duration: 0.5s;
+}
+.article button:active {
+  background-color: #8F5613;
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=index.css.map */
