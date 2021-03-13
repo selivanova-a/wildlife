@@ -1,0 +1,26 @@
+@mixin slider-image($background) {
+  margin:30px;
+  width: 300px;
+  height: 360px;
+  background-image:$background;
+}
+
+@mixin send-button {
+  all: unset;
+  padding:15px 40px;
+  background: $button-color;
+  border-radius: 5px;
+  font-family: $button-font-family;
+  font-size: 23px;
+  color: $inner-font-color;
+}
+
+@mixin hover {
+  background-color: $button-hover-color;
+  transition-duration: 0.5s;
+}
+
+@mixin active {
+  background-color: $button-pressed-color;
+  transition-duration: 0.5s;
+}

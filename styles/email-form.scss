@@ -1,0 +1,37 @@
+@import "mixins.scss";
+
+.email-form {
+  &__title {
+    margin-top:205px;
+    font-family:$font-family;
+    color:$main-title-font-color;
+    font-size: 27px;
+    text-align:center;
+  }
+
+  form {
+    padding-top:60px;
+    padding-bottom:240px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .mail {
+    width:540px;
+    height: 50px;
+    font-size:23px;
+  }
+
+  button {
+    @include send-button;
+
+    &:hover {
+      @include hover;
+    }
+
+    &:active {
+      @include active;
+    }
+  }
+}

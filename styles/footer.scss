@@ -1,0 +1,65 @@
+.footer {
+  margin:0 auto;
+  width: 1440px;
+  height: 359px;
+  background-image: url(../assets/images/footer-background-image.jpg);
+}
+
+.footer-navigation {
+  height: 359px;
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.footer-logo {
+  padding-top: 20px;
+
+}
+
+.icons {
+  display:flex;
+}
+
+.icon {
+  margin:14px;
+  width: 40px;
+  height: 40px;
+  background: $inner-font-color;
+  border-radius: 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  .icon__image {
+    background-position: center center;
+  }
+
+  .facebook {
+    width:15px;
+    height:27px;
+    background-image: url('../assets/icons/facebook.svg');
+  }
+
+  .instagram {
+    width:30px;
+    height:30px;
+    background-image: url('../assets/icons/Instagram.svg');
+  }
+
+  .pinterest {
+    width:20px;
+    height:25px;
+    background-image: url('../assets/icons/pinterest.svg');
+  }
+
+  .telegram {
+    width:25.5px;
+    height:22.5px;
+    background-image: url('../assets/icons/telegram.svg');
+  }
+
+  &:hover {
+    background: $button-hover-color;
+  }
+}

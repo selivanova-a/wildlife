@@ -1,0 +1,80 @@
+@import "mixins.scss";
+
+.slider {
+  padding-top:100px;
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+  align-items:center;
+
+  &__slides {
+    display:flex;
+    width:100%;
+    overflow:hidden;
+  }
+
+  &__item {
+    font-family: $font-family;
+    width: 100%;
+    flex-shrink: 0;
+    display:flex;
+    justify-content:center;
+    transition-property: transform;
+    transition-duration:400ms;
+  }
+
+  &__button {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    align-items:center;
+    justify-content:center;
+    font-size:45px;
+    color:$main-text-font-color;
+
+    &:hover {
+      color: $button-hover-color;
+      font-size:50px;
+    }
+  }
+
+  &__image {
+    h4 {
+      font-size: 22px;
+      color: $inner-font-color;
+      padding-top:247px;
+      padding-bottom:10px;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 17px;
+      color: $inner-font-color;
+    }
+  }
+
+}
+
+.deer {
+  @include slider-image(url('../assets/images/deer-slider-image.jpg'));
+}
+
+.squirrel {
+  @include slider-image(url('../assets/images/squirrel-slider-image.jpg'));
+}
+
+.bird {
+  @include slider-image(url('../assets/images/bird-slider-image.jpg'));
+}
+
+.wolf {
+  @include slider-image(url('../assets/images/wolf-slider-image.jpg'));
+}
+
+.squirrel2 {
+  @include slider-image(url('../assets/images/squirrel2-slider-image.jpg'));
+}
+
+.bag {
+  @include slider-image(url('../assets/images/bag-slider-image.jpg'));
+}

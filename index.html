@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Wild Life</title>
 	<link rel="stylesheet" type="text/css" href="styles/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/be2d7aec18.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -49,6 +49,57 @@
 			</div>
 		</section>
 	</div>
+	<div class="main-background-wrapper">
+		<div class="wrapper">
+			<div class="latest-articles">
+				<h2 class="latest-articles__title">Latest articles</h2>
+				<p class="latest-articles__description">Breaking news from the wild</p>
+				<div class="slider">
+					<div class="slider__button slider__button_left"><i class="fas fa-chevron-left"></i></div>
+					<div class="slider__slides">
+						<div class="slider__item slider__item_1">
+							<div class="slider__image deer">
+								<h4>Deer</h4>
+								<p>Naturalist investigation</p>
+							</div>
+							<div class="slider__image squirrel">
+								<h4>Squirrel</h4>
+								<p>Kamikaze squirrels</p>
+							</div>
+							<div class="slider__image bird">
+								<h4>Bird</h4>
+								<p>Birds Fight club</p>
+							</div>
+						</div>
+						<div class="slider__item slider__item_2">
+							<div class="slider__image wolf">
+								<h4>Wolf</h4>
+								<p>Naturalist investigation</p>
+							</div>
+							<div class="slider__image squirrel2">
+								<h4>Squirrel</h4>
+								<p>Kamikaze squirrels</p>
+							</div>
+							<div class="slider__image bag">
+								<h4>Bag</h4>
+								<p>Naturalist investigation</p>
+							</div>
+						</div>
+					</div>
+					<div class="slider__button slider__button_right">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+			<div class="email-form">
+				<h3 class="email-form__title">Get notified about new amazing articles</h3>
+				<form action="/my-handling-form-page" method="post">
+					<input type="email" class="mail" name="user_mail" placeholder="  Email">
+					<button type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
     <div class="background-wrapper">
 		<footer class="footer">
 			<div class="wrapper">
@@ -74,9 +125,9 @@
 					</ul>
 					<div class="icons">
 
-							<div class="icon">
-								<div class="icon__image facebook"></div>
-							</div>
+						<div class="icon">
+							<div class="icon__image facebook"></div>
+						</div>
 						<div class="icon">
 							<div class="icon__image instagram"></div>
 						</div>
@@ -92,5 +143,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>

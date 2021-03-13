@@ -1,0 +1,69 @@
+.survival {
+  margin: 0 auto;
+  width: 1440px;
+  height: 779px;
+  background-image: url(../assets/images/background-image.png);
+}
+
+.article {
+  margin: 100px 35px;
+  font-family: $font-family;
+  &__title {
+    margin-bottom:50px;
+    color: $button-color;
+    font-size:48px;
+    letter-spacing: 3px;
+
+  }
+  &__text {
+    margin-bottom:48px;
+    max-width: 270px;
+    font-size:18px;
+    color: $inner-font-color;
+    line-height:27px;
+  }
+
+  button {
+    all: unset;
+    padding:16px 42px;
+    background: $button-color;
+    border-radius: 5px;
+    font-family: $button-font-family;
+    font-size: 23px;
+    color: $inner-font-color;
+  }
+
+  button:hover {
+    background-color: $button-hover-color;
+    transition-duration: 0.5s;
+  }
+
+  button:active {
+    background-color: $button-pressed-color;
+    transition-duration: 0.5s;
+  }
+}
+
+.main-background-wrapper {
+  width: 100%;
+  background: $main-background-color;
+}
+
+.latest-articles {
+  padding-top:120px;
+  text-align:center;
+
+  &__title {
+    font-size: 48px;
+    font-family:$font-family;
+    color:$main-title-font-color;
+  }
+
+  &__description {
+    padding-top:25px;
+    font-size: 24px;
+    font-family:$font-family;
+    color:$main-text-font-color;
+
+  }
+}
