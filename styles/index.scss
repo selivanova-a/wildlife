@@ -11,7 +11,6 @@
 }
 
 .background-wrapper {
-  height: 780px;
   width: 100%;
   background: $header-background-color;
 }
@@ -24,6 +23,7 @@
 }
 
 .header {
+  padding-top:25px;
   display: flex;
   justify-content: space-between;
 
@@ -38,10 +38,11 @@
   list-style: none;
 
   &__link {
-    padding: 28px  32px;
+    padding-left: 33px;
+    padding-right:33px;
     font-size: 23px;
     font-weight: bolder;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-family;
 
     a {
       text-decoration: none;
@@ -76,12 +77,11 @@
 }
 
 .logo {
-  margin: 25px;
   display: flex;
 
   &__item {
     padding-left: 15px;
-    font-family: Roboto;
+    font-family: $button-font-family;
     font-size: 32px;
     line-height: 60px;
 
@@ -93,8 +93,8 @@
 }
 
 .article {
-  margin: 73px 35px;
-  font-family: 'Open Sans', sans-serif;
+  margin: 100px 35px;
+  font-family: $font-family;
   &__title {
     margin-bottom:50px;
     color: $button-color;
@@ -115,7 +115,7 @@
     padding:16px 42px;
     background: $button-color;
     border-radius: 5px;
-    font-family: Roboto;
+    font-family: $button-font-family;
     font-size: 23px;
     color: $inner-font-color;
   }
@@ -128,5 +128,71 @@
   button:active {
     background-color: $button-pressed-color;
     transition-duration: 0.5s;
+  }
+}
+
+.footer {
+  margin:0 auto;
+  width: 1440px;
+  height: 359px;
+  background-image: url(../assets/images/footer-background-image.jpg);
+}
+
+.footer-navigation {
+  height: 359px;
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.footer-logo {
+  padding-top: 20px;
+
+}
+
+.icons {
+  display:flex;
+}
+
+.icon {
+  margin:14px;
+  width: 40px;
+  height: 40px;
+  background: $inner-font-color;
+  border-radius: 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  .icon__image {
+    background-position: center center;
+  }
+
+  .facebook {
+    width:15px;
+    height:27px;
+    background-image: url('../assets/icons/facebook.svg');
+  }
+
+  .instagram {
+    width:30px;
+    height:30px;
+    background-image: url('../assets/icons/Instagram.svg');
+  }
+
+  .pinterest {
+    width:20px;
+    height:25px;
+    background-image: url('../assets/icons/pinterest.svg');
+  }
+
+  .telegram {
+    width:25.5px;
+    height:22.5px;
+    background-image: url('../assets/icons/telegram.svg');
+  }
+
+  &:hover {
+    background: $button-hover-color;
   }
 }
